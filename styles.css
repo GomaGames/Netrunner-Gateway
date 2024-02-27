@@ -76,8 +76,20 @@ h2{
   font-size: 1.5em;
 }
 
+h2 + h3{
+  margin-top: 15px;
+}
+
+h3 + p{
+  margin-top: 10px;
+}
+
 p{
   margin: 5px 0 10px;
+}
+
+p + p{
+  margin: -3px 0 10px;
 }
 
 a{
@@ -94,16 +106,6 @@ a:hover{
   padding: 15px;
   /* border: 1px solid #FFFFFF; */
   background-color: #222222;
-}
-
-@media only screen and (min-width:768px){
-  .container{
-    padding: 30px 30px 45px;
-  }
-
-  a.button{
-    margin-top: 20px !important;
-  }
 }
 
 .outer-container{
@@ -138,7 +140,7 @@ a.button{
   background: rgb(255,46,149);
 background: linear-gradient(90deg, rgba(255,46,149,1) 10%, rgba(94,91,216,1) 90%);
   max-width: 500px;
-  margin: auto;
+  margin: 10px auto 0;
 }
 
 a.button::before{
@@ -186,4 +188,18 @@ a.button:hover::before{
 a.button:hover::after{
   border-left: 8px solid #4845af;
   border-bottom: 8px solid #4845af;
+}
+
+@media only screen and (min-width:768px){
+  .container{
+    padding: 30px 30px 45px;
+  }
+
+  a.button{
+    margin-top: 20px !important;
+  }
+
+  h2 + h3{
+    margin-top: 25px;
+  }
 }
