@@ -1,0 +1,24 @@
+---
+import Tile from '../components/Tile.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Netrunner Meetups in Ontario Canada">
+  <Tile
+    containerClass="on"
+    title="Toronto"
+    cta={[
+      {
+        action: "https://discord.com/invite/2hNkcVHn",
+        label: "Join TorSaug City Grid Discord server",
+      },
+    ]}
+  >
+    <h3>Netrunner Meetup Every Wednesday</h3>
+
+    <p>We meet up for Netrunner at <a href="https://maps.app.goo.gl/RPqMufycHAQk7X5e6">The Rhino Bar &amp; Grill</a>
+      and <a href="https://docs.google.com/document/d/1mft8nPUDRx4yedQLRCxUCi-2DQ_BeB-A5uiTcsayO7w">The PATH</a>
+      underground system.</p>
+    <p>Join the community on Discord to get time and location details of the next meet up.</p>
+  </Tile>
+</Layout>

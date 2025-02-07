@@ -1,0 +1,36 @@
+---
+import Tile from '../components/Tile.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Netrunner Meetups in San Francisco / Bay Area">
+  <Tile
+    containerClass="sf"
+    title="San Francisco CA"
+    cta={[{
+      action: "https://sansan.cards/join",
+      label: "Join the SanSan North Netrunner community",
+    }]}
+  >
+    <h3>Every Thursday - Kennedy&apos;s Indian Curry House &amp; Irish Pub</h3>
+    <p>Play Netrunner at Kennedy&apos;s Indian Curry House &amp; Irish Pub at 6pm.</p>
+    <p><a href="https://maps.app.goo.gl/GfS9Kuz2pBAgPeLeA">1040 Columbus Ave, San Francisco, CA 94133</a></p>
+    <p><a href="https://sansan.cards">Check out more events in the local SanSan North community</a></p>
+  </Tile>
+
+  <Tile
+    containerClass="sf"
+    title="Berkeley CA"
+    cta={[{
+      action: "https://sansan.cards/join",
+      label: "Join the SanSan North Netrunner community",
+    }]}
+  >
+    <h3>Every Tuesday - Victory Point Cafe</h3>
+    <p>Play Netrunner at Victory Point Cafe at 6pm.</p>
+    <p><a href="https://maps.app.goo.gl/JrzQmBoVswk7RcRW8">1797 Shattuck Ave. Ste A, Berkeley, CA 94709</a></p>
+    <p><a href="https://sansan.cards">Check out more events in the local SanSan North community</a></p>
+    <p><a href="https://www.victorypointcafe.com/pages/events">Victory Point Cafe calendar of events</a></p>
+  </Tile>
+
+</Layout>

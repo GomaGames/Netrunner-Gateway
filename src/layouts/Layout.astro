@@ -1,0 +1,118 @@
+---
+import Tile from '../components/Tile.astro';
+
+interface Props {
+  title: string,
+  subtitle: string,
+}
+
+const title = Astro.props.title || 'Netrunner Gateway'
+const subtitle = Astro.props.subtitle || 'Local Meetups & Resources for getting into Netrunner'
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{title}</title>
+    <meta name="description" content="Local Netrunner Meetups & Resources for getting into the game Netrunner">
+    <meta name="author" content="Goma Games">
+		<meta name="generator" content={Astro.generator} />
+
+    <meta property="og:title" content={title}>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://netrunner-meetup.com">
+    <meta property="og:description" content={subtitle}>
+    <!-- <meta property="og:image" content="bg.jpeg"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="stylesheet" href="/styles.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EWPLE39P4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3EWPLE39P4');
+    </script>
+  </head>
+	<body>
+    <div class="wrapper">
+      <h1>{title}</h1>
+      <p>{subtitle}</p>
+
+      <Tile
+        containerClass="nsg"
+        title="Null Signal Games"
+        cta={[{
+          action: "https://nullsignal.games",
+          label: "Visit Site",
+        }]}
+      >
+        <p>NSG is a non-profit organization run by volunteers making Netrunner.</p>
+      </Tile>
+
+      <slot />
+      <div class="container learn-container">
+        <h2>Learn to Play</h2>
+        <p>Learn to play Netrunner from Null Signal Games.</p>
+        <a class="button" href="https://nullsignal.games/players/learn-to-play/">Learn to Play</a>
+      </div>
+
+      <div class="container play-online-container">
+        <h2>Play Online</h2>
+        <p>Play Netrunner for free online at https://www.jinteki.net.</p>
+        <a class="button" href="https://www.jinteki.net">Play Online</a>
+      </div>
+      <div class="container community-container">
+        <h2>Join the Community</h2>
+        <p>Join the main Netrunner community Discord.</p>
+        <a class="button" href="https://discord.gg/glc">Join Discord</a>
+      </div>
+      <div class="container community-container">
+        <h2>Find a Player Group</h2>
+        <p>List of Netrunner communities around the world.</p>
+        <a class="button" href="https://nullsignal.games/players/around-the-world">See Communities</a>
+      </div>
+
+      <div class="container cards-container">
+        <h2>Playing Cards</h2>
+        <p>Read the Netrunner Purchasing Guide to buy or make your own cards.</p>
+        <a class="button" href="https://docs.google.com/document/d/1lVmBNV-FgNg0lEnpcU_4_zr3tjn6-NdthGCj7EZFLbg">Read the
+          Guide</a>
+      </div>
+      <div class="container tokens-container">
+        <h2>Game Tokens</h2>
+        <p>
+          <a href="https://www.etsy.com/market/netrunner_tokens">Buy custom tokens on Etsy</a>
+        </p>
+        <p>
+          <a href="https://burgertokens.com/products/netrunner-tokens">Buy Burger Tokens</a>
+        </p>
+        <p>
+          <a href="https://aurbits.com/listing/645241827/updated-premium-core-set-of-fiberglass">Buy Aurbits Tokens</a>
+        </p>
+        <p>
+          <a href="https://boardgamegeek.com/filepage/97374/print-sheets-uniform-netrunner-tokens">Printable
+            Game Tokens</a>
+        </p>
+      </div>
+    </div>
+    <div class="fixed-bg"></div>
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>

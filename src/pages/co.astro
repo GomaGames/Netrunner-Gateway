@@ -1,0 +1,45 @@
+---
+import Tile from '../components/Tile.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Netrunner Meetups in Colorado">
+  <Tile
+    containerClass="denver"
+    title="Denver"
+    cta={[
+      {
+        action: "https://discord.gg/eV3XfaYtVU",
+        label: "Join the Colorado Netrunner Discord",
+      },
+      {
+        action: "https://www.facebook.com/groups/458432717581000/",
+        label: "Colorado Netrunner Facebook Group",
+      },
+    ]}
+  >
+    <h3>Every Thursday - The Wizard&apos;s Chest</h3>
+    <p>Play Netrunner at The Wizard&apos;s Chest at 6:30pm.</p>
+    <p><a href="https://maps.app.goo.gl/aiNZ5v8os1E3EZbr7">451 Broadway, Denver, CO 80203</a></p>
+  </Tile>
+
+  <Tile
+    containerClass="boulder"
+    title="Boulder"
+    cta={[
+      {
+        action: "https://discord.gg/eV3XfaYtVU",
+        label: "Join the Colorado Netrunner Discord",
+      },
+      {
+        action: "https://www.facebook.com/groups/458432717581000/",
+        label: "Colorado Netrunner Facebook Group",
+      },
+    ]}
+  >
+    <h3>Every Sunday - Grandmaster Games</h3>
+    <p>Play Netrunner at Grandmaster Games at 2:30pm.</p>
+    <p><a href="https://maps.app.goo.gl/ExCJztqEXQmXu6hs9">4800 Baseline Rd Suite C103, Boulder, CO 80303</a></p>
+  </Tile>
+
+</Layout>

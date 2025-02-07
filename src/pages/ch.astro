@@ -1,0 +1,18 @@
+---
+import Tile from '../components/Tile.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Netrunner Meetups in Switzerland">
+  <Tile
+    containerClass="bern"
+    title="Bern"
+    cta={[{
+      action: "https://discord.gg/UrKxTGZ",
+      label: "Join the Netrunner Deutschland Discord",
+    }]}
+  >
+    <p>We meet up to play Netrunner at Erupt Lounge every second Wednesday at 6pm</p>
+    <p><a href="https://maps.app.goo.gl/GfS9Kuz2pBAgPeLeA">Parkterrasse 14, 3012 Bern, Switzerland</a></p>
+  </Tile>
+</Layout>

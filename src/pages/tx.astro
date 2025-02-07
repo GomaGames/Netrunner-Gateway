@@ -1,0 +1,49 @@
+---
+import Tile from '../components/Tile.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Netrunner Meetups in Texas">
+  <Tile
+    containerClass="houston"
+    title="Houston"
+    cta={[{
+      action: "https://discord.gg/gBGvJBF99x",
+      label: "Join the asimov Discord",
+    }]}
+  >
+    <h3>Every Tuesday - Coral Sword</h3>
+    <p>Play Netrunner at Coral Sword</p>
+    <p><a href="https://maps.app.goo.gl/FHWGYfsXiYRnhJ8K7">1318 Telephone Rd, Houston, TX 77023</a></p>
+
+    <h3>Every Thursday - Asgard Games</h3>
+    <p>Play Netrunner at Asgard Games</p>
+    <p><a href="https://maps.app.goo.gl/TPE6ewBNzw1oDFpr8">3302 S Shepherd Dr, Houston, TX 77098</a></p>
+  </Tile>
+
+  <Tile
+    containerClass="dfw"
+    title="Dallas-Forth Worth"
+    cta={[{
+      action: "https://discord.gg/KmwKhcAGUV",
+      label: "Join the DalFort Grid Discord",
+    }]}
+  >
+    <h3>Every Tuesday - Boardwalk Games</h3>
+    <p>Play Netrunner at Boardwalk Games</p>
+    <p><a href="https://maps.app.goo.gl/3MG2ZTGViWomaERB6">2810 E Trinity Mls Rd Apt 184, Carrollton, TX 75006</a></p>
+  </Tile>
+
+  <Tile
+    containerClass="austin"
+    title="Austin"
+    cta={[{
+      action: "https://alwaysberunning.net/tournaments/2277/austin-city-grid-weekly-meetup",
+      label: "See details for next meetup",
+    }]}
+  >
+      <h3>Every Week</h3>
+      <p>Play Netrunner at a weekly meetup in Austin, Texas</p>
+  </Tile>
+
+</Layout>

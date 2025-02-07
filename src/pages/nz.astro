@@ -1,0 +1,21 @@
+---
+import Tile from '../components/Tile.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Netrunner Meetups in New Zealand">
+  <Tile
+    containerClass="christchurch"
+    title="Christchurch"
+    cta={[
+      {
+        action: "https://discord.gg/J2fkss8js7",
+        label: "Join the ANRNZ Discord",
+      },
+    ]}
+  >
+    <p>Play Netrunner at TCG Collector NZ fortnightly on Tuesdays, 6:30pm.</p>
+    <p><a href="https://maps.app.goo.gl/RKFBC5a8Qnb22HaQ9">59B Carlyle Street Christchurch, Canterbury 8023 New Zealand</a></p>
+    <p><a href="https://discord.gg/J2fkss8js7">Check the #christchurch channel on Discord for schedule</a></p>
+  </Tile>
+</Layout>

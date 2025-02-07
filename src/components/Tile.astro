@@ -1,0 +1,21 @@
+---
+interface Props {
+  containerClass: string,
+  title: string,
+  cta: [{ action: string, label: string }],
+}
+
+const { containerClass, title, body, cta } = Astro.props
+---
+<div class="container {containerClass}-container">
+  <h2>{title}</h2>
+  <slot />
+
+  {
+    cta && (
+      cta.map(({action, label}) =>
+        <a class="button" href={action}>{label}</a>
+      )
+    )
+  }
+</div>
