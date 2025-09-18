@@ -1,0 +1,21 @@
+---
+import Tile from '../components/Tile.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Netrunner Meetups in Georgia">
+  <Tile
+    containerClass="atlanta"
+    title="Atlanta"
+    cta={[{
+      action: "https://discord.gg/9hpUeCtUYf",
+      label: "Join the North Georgia Netrunners Discord",
+    }]}
+  >
+
+    <h3>Biweekly Saturday - The Independent</h3>
+    <p>Play Netrunner at The Independent from 3pm - 8pm</p>
+    <p><a href="https://maps.app.goo.gl/TaB3cRVjzUjw8wqo6">931 Monroe Dr NE Ste C205, Atlanta, GA 30308</a></p>
+  </Tile>
+
+</Layout>
