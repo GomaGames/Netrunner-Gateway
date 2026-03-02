@@ -23,6 +23,7 @@ Add and commit all changes and push to `main` then the site will serve whatever 
 
 ## Project Structure
 
+<!-- I need to update this section 
 The project is structured like this:
 
 ```text
@@ -37,6 +38,7 @@ The project is structured like this:
 │       └── index.astro
 └── package.json
 ```
+-->
 
 To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
