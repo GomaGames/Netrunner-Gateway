@@ -15,7 +15,13 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 🚀 Project Structure
+## 🚀 Deployment
+
+Run `npm run build` to compile the site into the `docs/` directory.
+
+Add and commit all changes and push to `main` then the site will serve whatever is in `docs/`
+
+## Project Structure
 
 The project is structured like this:
 
