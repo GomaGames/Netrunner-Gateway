@@ -58,22 +58,24 @@ const subtitle = Astro.props.subtitle || 'Local Meetups & Resources for getting 
         <p>NSG is a non-profit organization run by volunteers making Netrunner.</p>
       </Tile>
 
-      <slot />
       <div class="container learn-container">
         <h2>Learn to Play</h2>
         <p>Learn to play Netrunner from Null Signal Games.</p>
         <a class="button" href="https://nullsignal.games/blog/new-learn-to-play-resources/">Learn to Play</a>
       </div>
 
-      <div class="container play-online-container">
-        <h2>Play Online</h2>
-        <p>Play Netrunner for free online at https://www.jinteki.net.</p>
-        <a class="button" href="https://www.jinteki.net">Play Online</a>
-      </div>
       <div class="container community-container">
         <h2>Join the Community</h2>
         <p>Join the main Netrunner community Discord.</p>
         <a class="button" href="https://discord.gg/glc">Join Discord</a>
+      </div>
+
+      <slot />
+
+      <div class="container play-online-container">
+        <h2>Play Online</h2>
+        <p>Play Netrunner for free online at https://www.jinteki.net.</p>
+        <a class="button" href="https://www.jinteki.net">Play Online</a>
       </div>
       <div class="container community-container">
         <h2>Find a Player Group</h2>
@@ -99,10 +101,14 @@ const subtitle = Astro.props.subtitle || 'Local Meetups & Resources for getting 
           <a href="https://aurbits.com/listing/645241827/updated-premium-core-set-of-fiberglass">Buy Aurbits Tokens</a>
         </p>
         <p>
+          <a href="https://tokens.gomagames.com">Premium Netrunner Poker Chip Tokens</a>
+        </p>
+        <p>
           <a href="https://boardgamegeek.com/filepage/97374/print-sheets-uniform-netrunner-tokens">Printable
             Game Tokens</a>
         </p>
       </div>
+
     </div>
     <div class="fixed-bg"></div>
 	</body>
